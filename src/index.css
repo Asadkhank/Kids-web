@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes ticker {
+  0% {
+    transform: translateX(100%); /* Start from the right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left */
+  }
+}
+
+.animate-ticker {
+  animation: ticker 15s linear infinite;
+  white-space: nowrap; /* Ensure content stays in a single line */
+}
